@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- untuk tampilan responsive -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- untuk judul -->
+		<title>Tugas Web 1</title>
+
+	<!-- untuk bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	</head>
+
+	<body>
+	<div class="container">
+
+		<!-- untuk menu atas -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- untuk judul -->
+				<nav class="navbar-header">
+				<!-- untuk menu responsive -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	            </button>
+				<!-- untuk menu responsive -->
+					<a href="#" class="navbar-brand">
+					RPLku
+					</a>
+				</nav>
+				<!-- untuk judul -->
+
+				<!-- isian menu -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+					<!-- isinya -->
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="foto.html"><span class="glyphicon glyphicon-camera"></span> Foto</a></li>
+						<li><a href="tentang.html"><span class="glyphicon glyphicon-tag"></span> Tentang</a></li>
+				<!-- ini dropdown -->
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-star"></span> Produk</a> 
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="produk.html"> <span class="glyphicon glyphicon-heart"></span> Menu1</a></li>
+								<li><a href="produk.html"><span class="glyphicon glyphicon-heart"></span> Menu2</a></li>
+								<li><a href="produk.html"><span class="glyphicon glyphicon-heart"></span> Menu3</a></li>
+							</ul>
+						</li>
+				<!-- ini dropdown -->
+					</ul>
+
+					<!-- menu kanan -->
+					<ul class="nav navbar-nav navbar-right">
+					<!-- isinya -->
+						<li><a href="profil.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+					</ul>
+				</div>
+				<!-- isian menu -->
+				
+			</div>
+			
+		</nav>		
+		<!-- untuk menu atas -->
+
+		<!-- isi web -->
+		<div class="jumbotron text-center">
+			<marquee behavior="scroll" scrollamount="20" direction="left">
+				<h1>Selamat Datang Di RPL</h1>
+			</marquee>
+			<p>
+				Web ini adalah tugas Web Frontend dengan menggunakan CSS BootStrap
+			</p>
+		</div>
+
+		<div class="page-header">
+			<h1>Detail Produk</h1>
+		</div>
+
+<!-- untuk alert CSS -->
+<div class="col-md-12">
+	<div id="info-like" class="alert alert-info alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+		<h3>Anda Menyukai Produk ini Terima Kasih ^_^</h3>
+	</div>
+
+	<div id="info-dislike" class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+		<h3>Maaf Klo Produk ini mengecewakan Anda</h3>
+	</div>
+
+</div>
+
+
+		<!-- isi web -->
+		<!-- ini gallery 1 -->
+		<hr class="featurette-devider">
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">
+					Produk Pertama
+				</h2>
+				<p class="lead">Ini adalah contoh pembuatan halaman Detail Produk menggunakan CSS bootstrap</p>	
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Tipe</th>
+							<th>Ukuran</th>
+							<th>Harga</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Merah</td>
+							<td>L</td>
+							<td>Rp. 45.000</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Biru</td>
+							<td>XL</td>
+							<td>Rp. 55.000</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Kuning</td>
+							<td>M</td>
+							<td>Rp. 25.000</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+			<div class="col-md-5">
+				<img src="images/Koala.jpg" class="featurette-image img-responsive">
+			</div>
+		</div>
+
+		<div class="col-md-12">
+			<p>
+			<button id="like" class="btn btn-lg btn-primary">
+			<span class="glyphicon glyphicon-thumbs-up"></span>
+			 LIKE</button>
+			<button id="dislike" class="btn btn-lg btn-danger">
+			<span class="glyphicon glyphicon-thumbs-down"></span>
+			 DISLIKE</button>
+			<button id="beli" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+			<span class="glyphicon glyphicon-shopping-cart"></span>
+			 BELI</button>
+			</p>
+		</div>
+
+		<!-- isi web -->
+	</div>
+
+
+
+<!-- untuk alert CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- untuk jquery local-->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- untuk js bootstarp -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+<!-- untuk modal -->
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">X</button>
+				<h4 class="modal-title">Pemesanan Produk</h4>
+			</div>
+			<div class="modal-body">
+				<!-- untuk isi -->
+				<label>Pilihan</label>
+				<select id="pilihan" name="pilihan" class="form-control">
+					<option selected="selected">--Silahkan Pilih--</option>
+					<option value="1">L</option>
+					<option value="2">XL</option>
+					<option value="3">M</option>
+				</select>
+				<label>Harga</label>
+				<input type="text" id="harga" name="harga" class="form-control">
+				<label>Jumlah Beli / Qty</label>
+				<input type="number" name="jumlah" id="jumlah" class="form-control">
+				<label>Total Bayar</label>
+				<input type="text" name="total" id="total" class="form-control">
+				<label>Bayar</label>
+				<input type="text" name="bayar" id="bayar" class="form-control">
+				<label>Kembalian</label>
+				<input type="text" name="bayar" id="kembalian" class="form-control">
+				<!-- untuk isi -->
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default"  data-dismiss="modal">Tutup</button>
+				<button id="kembali" class="btn btn-success">Beli</button>
+			</div>			
+		</div>
+	</div>
+</div>
+<!-- untuk modal -->
+
+
+<script type="text/javascript">
+	$(function(){
+		//menyembunyikan element
+		$("#info-like").hide();
+		$("#info-dislike").hide();
+
+		//jika tombol ID nya like di klik
+		$("#like").click(function(){
+			//maka muncul pop up
+			// alert('Anda Menyukai Produk ini');
+			$("#info-like").fadeToggle(1000);
+			console.log("ini untuk button like");
+		});
+
+		//untuk dislike
+		$("#dislike").click(function(){
+			//maka muncul pop up
+			// alert('Anda Menyukai Produk ini');
+			$("#info-dislike").fadeToggle(1000);
+			console.log("ini untuk button dislike");
+		});
+
+		//untuk harga otomatis
+		$('#pilihan').change(function(){
+			//ambil nilai pilihan user
+			var pilihan=$(this).val();
+			var harga;
+			// alert(pilihan);
+			if(pilihan=='1') {
+				harga='45000';
+			} else if (pilihan=='2') {
+				harga='55000';
+			} else if (pilihan=='3') {
+				harga='25000';
+			}
+			//memasukan harga ke field harga
+			$('#harga').val(harga);
+		});
+
+		//untuk total otomatis
+		$('#jumlah').keyup(function(){
+			// ambil nilai dari field jumlah
+			var jumlah=$(this).val();
+			//ambil nilai dari field harga
+			var harga=$('#harga').val();
+			//hitung total
+			var total=harga*jumlah;
+			//memasukan total ke field total
+			$('#total').val(total);			
+		});
+
+		$('#kembali').click(function(){
+			var total=$('#total').val();			
+			var bayar=$('#bayar').val();
+
+			$('#kembalian').val(bayar-total);
+		});
+
+	});
+</script>
